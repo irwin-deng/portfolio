@@ -1,0 +1,101 @@
+section {
+  padding-top: 125px;
+  font-family: 'Open Sans';
+}
+
+h3 {
+  color: var(--black);
+  font-family: 'Open Sans Bold';
+}
+
+p {
+  margin: 0px;
+}
+
+
+.container-subsection {
+  margin-top: 20px;
+  vertical-align: top;
+
+  &-content {
+    padding-top: 1rem!important;
+  }
+}
+
+.container-experience-item {
+  width: 100%;
+  margin-top: 0px;
+}
+
+.small-text {
+  margin-left: 2px;
+  margin-right: 10px;
+}
+
+
+#profile-image-container {
+  margin-right: 50px;
+}
+
+#container-about-me {
+  width: 76%;
+  margin-left: 12%;
+  margin-top: 0;
+}
+
+#about-me-txt {
+  font-weight: 600;
+  line-height: 28px;
+  color: var(--gray);
+  padding: 20px;
+}
+
+#timeline-border {
+  box-sizing: content-box;
+  border-width: 3.5px;
+  border-left-style: solid;
+  border-image: linear-gradient(to right bottom, var(--blue), var(--aqua));
+  border-image-slice: 1;
+}
+
+#circle-icon {
+  background: -webkit-linear-gradient(45deg, var(--blue), var(--aqua));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 20px ;
+  margin: auto auto auto 0;
+  position: relative;
+  left: -12.5px;
+}
+
+#container-experience-item {
+  width: 100%;
+}
+
+#place-name {
+  font-weight: 600;
+}
+
+#aditional-data-education {
+  font-size: 12px;
+}
+
+.icon-custom {
+  font-size: 16px;
+  color: var(--gray);
+}
+
+#hr-circular {
+  margin: auto;
+  height: 15px;
+  background-color: var(--white);
+  border: 2px solid var(--orange);
+  border-radius: 100px;
+  width: 65px;
+  opacity: 0.55;
+}
+
+#hobby-list {
+  text-align: left;
+}

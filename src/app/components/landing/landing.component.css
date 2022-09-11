@@ -1,0 +1,32 @@
+main {
+  min-height: 100vh;
+  padding-top: 130px;
+}
+
+#welcome-message{
+    height: 300px;
+    margin-bottom: 35px;
+}
+
+.welcome-message {
+  font-family: "Open Sans Extra Bold";
+  font-size: 40px;
+  line-height: 60px;
+}
+
+#arrow-icon {
+  font-size: 40px;
+  color: var(--gray);
+  margin-top: 25px;
+}
+
+#banner-img {
+  width: 600px;
+}
+
+#home-text-gradient {
+  background: -webkit-linear-gradient(45deg, var(--blue), var(--aqua));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

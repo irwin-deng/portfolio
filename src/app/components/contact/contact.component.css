@@ -1,0 +1,14 @@
+section {
+    padding-top: 125px;
+    height: 500px;
+}
+
+.social-icon {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    margin: 30px;
+    margin-top: 0px;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 50px;
+}

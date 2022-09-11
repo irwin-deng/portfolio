@@ -1,0 +1,29 @@
+<header>
+  <nav
+    class="navbar navbar-expand-lg"
+    [ngStyle]="
+      isTop
+        ? {}
+        : {
+            'border-bottom-width': '2px',
+            'border-bottom-style': 'solid',
+            'border-bottom-color': '#E0E0E0'
+          }
+    "
+  >
+    <div class="container" as>
+      <a id="name-link" href="#landing">Irwin&nbsp;Deng</a>
+      <div class="justify-content-lg-center justify-content-end">
+        <div class="navbar-nav text-center">
+          <a
+            class="nav-link hover-underline-animation"
+            *ngFor="let option of options"
+            [href]="option.anchor"
+          >
+            {{ option.name }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
