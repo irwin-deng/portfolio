@@ -14,10 +14,22 @@ main {
   line-height: 60px;
 }
 
+@keyframes arrowJump {
+  0%, 20%, 50%, 80%, 100% {
+    margin-top: 30px;
+  }
+  40% {
+    margin-top: 0px;
+  }
+  60% {
+    margin-top: 15px;
+  }
+}
 #arrow-icon {
   font-size: 40px;
   color: var(--gray);
   margin-top: 25px;
+  animation: arrowJump 2.5s infinite;
 }
 
 #banner-img {
