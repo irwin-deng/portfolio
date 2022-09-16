@@ -9,6 +9,7 @@ export class NavbarComponent implements OnInit {
   isTop = true;
   options = [
     { name: 'About Me', anchor: '#about' },
+    { name: 'Projects', anchor: '#projects' },
     { name: 'Contact Me', anchor: '#contact' },
   ];
 
