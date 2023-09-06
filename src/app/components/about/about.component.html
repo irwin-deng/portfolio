@@ -2,7 +2,7 @@
     <h2 class="text-center">About Me</h2>
   <hr class="mb-5" id="horizontal-line-gradient">
   <div class="row text-center" id="container-about-me">
-    <div class="d-lg-flex justify-content-center align-items-center">
+    <div class="container-subsection col-12 col-lg-6">
       <div id="profile-image-container">
         <img class="mb-3 mx-auto" src="/assets/img/about/profile.png" alt="profile picture">
       </div>
@@ -12,10 +12,51 @@
         to force a computer to complete a task. Data analysis involves drawing insights that no one else sees.
       </p>
     </div>
+    <div class="container-subsection col-12 col-lg-6" id="container-hobbies">
+      <h3>Some of my hobbies</h3>
+      <div class="container-subsection-content ps-lg-5 pt-5">
+        <ul id="hobby-list">
+          <li><b>Music composition</b> — A unique blend of creativity and analytical thinking in the form of music theory. You can check out some pieces I've composed/arranged <a href="https://musescore.com/user/2810971/sheetmusic?sort=view_count" target="_blank">here</a></li>
+          <li><b>Road cycling</b> — Long bike rides are rewarding adventures</li>
+          <li><b>Ultimate Frisbee</b> — As a member of UPenn's club ultimate frisbee team, I always appreciate developing and executing a well-designed gameplan. </li>
+          <li><b>Strategy games</b> — My favorite is the <i>Civilization</i> series. I love managing chaos through the optimal use of limited resources.</li>
+        </ul>
+      </div>
+    </div>
   </div>
   <div class="row text-center">
+    <div class="container-subsection col-12 col-lg-6" id="container-education">
+      <h3>My education</h3>
+      <div class="container-subsection-content ps-lg-5 pt-5">
+        <div class="ms-lg-5" id="timeline-border">
+          <div *ngFor="let item of educationItems" class="d-flex mb-4">
+            <span class="material-icons" id="circle-icon">
+              circle
+            </span>
+            <div class="container-experience-item text-lg-start me-4 me-lg-0">
+              <p id="place-name">{{item.place}}</p>
+              <p id="title-name">{{item.title}}</p>
+              <p class="d-flex justify-content-center justify-content-lg-start" id="aditional-data-education">
+                <span class="material-icons-round icon-custom">
+                  location_on
+                </span>
+                <span class="small-text">
+                  {{item.location}}
+                </span>
+                <span class="material-icons-round icon-custom">
+                  event
+                </span>
+                <span class="small-text">
+                  {{item.dateRange}}
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container-subsection col-12 col-lg-6" id="container-experience">
-      <h3>My education and experience</h3>
+      <h3>My experience</h3>
       <div class="container-subsection-content ps-lg-5 pt-5">
         <div class="ms-lg-5" id="timeline-border">
           <div *ngFor="let item of experienceItems" class="d-flex mb-4">
@@ -42,17 +83,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="container-subsection col-12 col-lg-6" id="container-hobbies">
-      <h3 vertical-align="top">Some of my hobbies</h3>
-      <div class="container-subsection-content ps-lg-5 pt-5">
-        <ul id="hobby-list">
-          <li><b>Music composition</b> — A unique blend of creativity and analytical thinking in the form of music theory. You can check out some pieces I've composed/arranged <a href="https://musescore.com/user/2810971/sheetmusic?sort=view_count" target="_blank">here</a></li>
-          <li><b>Road cycling</b> — Long bike rides are rewarding adventures</li>
-          <li><b>Ultimate Frisbee</b> — As a member of UPenn's club ultimate frisbee team, I always appreciate developing and executing a well-designed gameplan. </li>
-          <li><b>Strategy games</b> — My favorite is the <i>Civilization</i> series. I love managing chaos through the optimal use of limited resources.</li>
-        </ul>
       </div>
     </div>
   </div>
