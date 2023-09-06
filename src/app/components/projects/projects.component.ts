@@ -18,7 +18,7 @@ export class ProjectsComponent implements OnInit {
     previewImage: 'mysongsql-image.png',
     colorHue: 0,
     description: 
-        `This is a song recommendation engine that makes use of the Spotify API. Implemented with JavaScript (React + NodeJS) and MySQL.
+        `This is a song recommendation engine that makes use of the Spotify API. 
         
         Features
         ●	Look up songs based on album, name, or artist
@@ -30,7 +30,7 @@ export class ProjectsComponent implements OnInit {
         ●	Leaderboard of artists who have had the most streams, as well as time on a top chart
         ●	Account Creation/Login: Allow users to favorite songs to come back to later
         `,
-    deployLink: 'https://mysongsql.netlify.app/',
+    deployLink: undefined,
     githubLink: undefined,
     demoImage: 'mysongsql-demo.gif'
     },
@@ -54,6 +54,55 @@ export class ProjectsComponent implements OnInit {
     githubLink: undefined,
     reportPath: 'latex-report.pdf',
     demoImage: undefined
+    },
+    {
+    id: 'penncloud',
+    isDeployed: false,
+    isPrivate: true,
+    hasReport: false,
+    name: 'PennCloud',
+    summary: 'Distributed cloud platform similar to Google Apps, implemented with C++ and HTML/CSS',
+    previewImage: 'penncloud-image.png',
+    colorHue: 210,
+    description: 
+        `This is a distributed cloud platform similar to Google Apps. This platform has a webmail service, analogous to Gmail, as well as a storage service, analogous to Google Drive. Users connect to frontend servers with their browsers. Frontend servers don't store any state; instead, all state is stored in backend servers.
+        
+        Features
+        ●	Frontend servers that support persistent connections, cookie handling, and chunk transfer encoding
+        ●	Load balancer that keeps track of server status and redirects clients between servers
+        ●	Distributed key-value storage with replication and guarantees on consistency and fault tolerance
+        ●	User accounts with account creation, login, and password reset
+        ●	Webmail service that can send/receive emails internally as well as to remote users
+        ●	Storage service that allows creating, deleting, renaming, and moving files/folders
+        ●	Admin console that displays the status of servers and allows for killing/starting individual servers
+        `,
+    deployLink: undefined,
+    githubLink: undefined,
+    demoImage: 'penncloud-demo.gif'
+    },
+    {
+    id: 'pennos',
+    isDeployed: false,
+    isPrivate: true,
+    hasReport: false,
+    name: 'PennOS',
+    summary: 'UNIX-like operating system with a priority scheduler, file system, and shell, implemented in C',
+    previewImage: 'pennos-image.png',
+    colorHue: 60,
+    description: 
+        `This is a UNIX-like operating system simulator with a priority scheduler, FAT file system, and shell. Unlike a real operating system, this does not boot on hardware; rather, PennOS runs within a single process on a host OS.
+        
+        Features
+        ●	Processes that run as context threads on the host OS
+        ●	Signal handling, including SIGSTOP, SIGCONT, and SIGTERM
+        ●	Priority-queue-based scheduler with multiple process priority levels
+        ●	FAT16-based file system supporting creating, deleting, renaming, and moving files/folders
+        ●	Shell with redirection and builtins such as cat, ls, touch, chmod, and kill
+        ●	Script execution
+        `,
+    deployLink: undefined,
+    githubLink: undefined,
+    demoImage: 'pennos-demo.gif'
     },
     {
     id: 'compiler',
